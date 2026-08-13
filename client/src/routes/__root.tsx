@@ -118,6 +118,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           legalName: site.legalName,
           email: site.email,
           telephone: site.phone,
+              sameAs: [site.instagram],
           address: {
             "@type": "PostalAddress",
             streetAddress: "145, Mosque Rd, Fraser Town",

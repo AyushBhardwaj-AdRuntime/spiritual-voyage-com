@@ -1,5 +1,5 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import logoAsset from "@/assets/logo.png";
@@ -65,6 +65,15 @@ export function SiteNav() {
         <div className="flex shrink-0 items-center gap-3">
           <ThemeToggle className="hidden md:flex" />
           <CurrencyToggle className="hidden sm:flex" />
+          <a
+            href={site.instagram}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+            className="inline-flex size-9 items-center justify-center border border-cream/20 text-cream/70 transition-colors hover:border-gold hover:text-gold"
+          >
+            <Instagram className="size-4" aria-hidden />
+          </a>
           <Link to="/booking" className="btn-gold hidden lg:inline-flex">
             Book Now
           </Link>
@@ -118,6 +127,19 @@ export function SiteNav() {
           <Link to="/booking" className="btn-gold mt-12 w-full">
             Book Now
           </Link>
+          <div className="mt-6 flex items-center gap-3">
+            <a
+              href={site.instagram}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+              className="inline-flex size-9 items-center justify-center border border-cream/20 text-cream/70 transition-colors hover:border-gold hover:text-gold"
+            >
+              <Instagram className="size-4" aria-hidden />
+            </a>
+            <CurrencyToggle className="sm:hidden" />
+            <ThemeToggle className="md:hidden" />
+          </div>
           <div className="mt-6 flex items-center gap-3">
             <CurrencyToggle className="sm:hidden" />
             <ThemeToggle className="md:hidden" />

@@ -23,15 +23,16 @@ export function SiteFooter() {
           <p className="mt-6 max-w-xs text-sm leading-relaxed text-cream/70">{site.mission}</p>
           <div className="mt-8 flex items-center gap-4">
             {[
-              { Icon: Instagram, label: "Instagram" },
-              { Icon: Facebook, label: "Facebook" },
-              { Icon: Youtube, label: "YouTube" },
-            ].map(({ Icon, label }) => (
-              /* REPLACE: point these at your real social profiles */
+              { Icon: Instagram, label: "Instagram", href: site.instagram },
+              { Icon: Facebook, label: "Facebook", href: "#" },
+              { Icon: Youtube, label: "YouTube", href: "#" },
+            ].map(({ Icon, label, href }) => (
               <a
                 key={label}
-                href="#"
+                href={href}
                 aria-label={label}
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex size-9 items-center justify-center border border-cream/20 text-cream/70 transition-colors hover:border-gold hover:text-gold"
               >
                 <Icon className="size-4" aria-hidden />

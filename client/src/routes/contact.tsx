@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Clock, Mail, MapPin, MessageCircle, Phone, Instagram } from "lucide-react";
 import { useRef, useState } from "react";
 import { toast } from "sonner";
 
@@ -219,6 +219,15 @@ function ContactPage() {
                   <span>
                     <span className={labelClass}>Office</span>
                     <span className="mt-1 block leading-relaxed">{site.address}</span>
+                  </span>
+                </li>
+                <li className="flex gap-4">
+                  <Instagram className="mt-0.5 size-4 shrink-0 text-gold" aria-hidden />
+                  <span>
+                    <span className={labelClass}>Instagram</span>
+                    <a href={site.instagram} target="_blank" rel="noreferrer" className="link-quiet mt-1 block break-all">
+                      {site.instagram}
+                    </a>
                   </span>
                 </li>
                 <li className="flex gap-4">

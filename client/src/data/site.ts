@@ -9,6 +9,7 @@ export const site = {
   whatsapp: "https://wa.me/919845791555",
   whatsappNumber: "919845791555",
   address: "145, Mosque Rd, Fraser Town, Bengaluru, Karnataka 560005",
+  instagram: "https://www.instagram.com/al_hasan_travelandtours?igsh=MXhxc3MxdTVlNmJqYw==",
   responsePromise: "We reply within 24 hours.",
 } as const;
 
